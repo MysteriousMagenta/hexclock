@@ -1,0 +1,19 @@
+h1#color {
+	display: block;
+	/*margin: auto;*/
+
+	color: white;
+	font-size: 5em;
+	font-family: Helvetica, cursive;
+	text-align: center;
+}
+
+p#explanation {
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	font-family: Courier;
+	position: fixed;
+	margin: auto;
+	bottom: 5px;
+}
