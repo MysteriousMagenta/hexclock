@@ -27,7 +27,7 @@ function displayColor() {
 function start() {
 	var colorText = document.getElementById("color")
 	var body = document.getElementsByTagName("body")[0];
-	console.log(body);
+	console.log(document.getElementsByTagName("body"), body);
 	if (!colorText) {
 		var colorHeader = document.createElement("h1");
 		colorHeader.id = "color";
@@ -43,4 +43,4 @@ function start() {
 	window.onload = colorInterval;
 }
 
-start()
+window.onload = start()
