@@ -25,22 +25,9 @@ function displayColor() {
 }
 
 function start() {
-	var colorText = document.getElementById("color")
-	var body = document.getElementById("body");
-	console.log(document.getElementById("body"), body);
-	if (!colorText) {
-		var colorHeader = document.createElement("h1");
-		colorHeader.id = "color";
-		body.insertBefore(colorHeader, document.getElementById("explanation"))
-	}
-	else {
-		if (colorText.style.display !== "block") {
-			colorText.style.display = "block";
-		}
-	}
 	var seconds = 1;
 	var colorInterval = setInterval(displayColor, seconds*1000);
-	window.onload = colorInterval;
+	return colorInterval;
 }
 
 window.onload = start()
