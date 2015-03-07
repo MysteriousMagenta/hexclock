@@ -26,6 +26,7 @@ function displayColor() {
 
 function start() {
 	var colorText = document.getElementById("color")
+	console.log(document.getElementsByTagName("body"))
 	var body = document.getElementsByTagName("body")[0];
 	if (!colorText) {
 		var colorHeader = document.createElement("h1");
